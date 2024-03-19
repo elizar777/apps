@@ -23,7 +23,11 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include("apps.kani.urls"))
+    path('', include("apps.kani.urls")),
+    path('', include("apps.kanykey.urls")),
+    path('', include("apps.kudbu.urls")),
+    path('', include("apps.musu.urls")),
+    path('', include("apps.nurbo.urls"))
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
